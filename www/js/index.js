@@ -21,7 +21,23 @@ var onPlacesSuccess = function (position) {
     Longitude = position.coords.longitude;
    
     create_map(Latitude, Longitude);
+    create_marker(Latitude, Longitude);
 
+}
+
+
+function create_marker (Latitude, Longitude){
+    var myLatLng = {lat: Latitude, lng: Longitude};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map
+  });
 }
 
 function create_map(Latitude, Longitude){
