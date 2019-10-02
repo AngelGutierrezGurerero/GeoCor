@@ -1,5 +1,5 @@
 # Cordova plugin geolocation
-Pequeño ejemplo sobre el uso  de el plugin en cordova
+Ejemplo de implementación de el plugin de Geolocalización en Cordova
 
 ## Autores
 ``Niño V. Nelson Andres.``
