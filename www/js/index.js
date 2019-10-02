@@ -16,7 +16,7 @@ var app = {
 app.initialize();
 
 var onPlacesSuccess = function (position) {
-
+//Se obtienen las coordenadas
     Latitude = position.coords.latitude;
     Longitude = position.coords.longitude;
    
@@ -24,6 +24,7 @@ var onPlacesSuccess = function (position) {
     alert("Latitude" + Latitude + "Longitude" + Longitude);
 }
 
+//Se crea el mapa con Google Maps JavaScript API
 function create_map(Latitude, Longitude){
     var latLong = new google.maps.LatLng(Latitude, Longitude);
 
@@ -34,7 +35,7 @@ function create_map(Latitude, Longitude){
     };
     
     var Map = new google.maps.Map(document.getElementById("map"), mapOptions);
-
+    
     document.getElementById("Longitude").innerHTML = Latitude;
     document.getElementById("Latitude").innerHTML = Longitude; 
 }
