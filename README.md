@@ -1,4 +1,4 @@
-# Cordova plugin geolocation
+# Cordova Plugin Geolocation
 Ejemplo de implementación del plugin de Geolocalización en Cordova
 
 ## Autores
